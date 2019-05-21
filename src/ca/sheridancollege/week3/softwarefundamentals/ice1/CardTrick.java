@@ -21,16 +21,19 @@ public class CardTrick {
         
         for (int i=0; i<magicHand.length; i++)
         {
+            /*
             Card c = new Card();
             c.setValue((int)(1 + Math.random() * 13));
-            c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
+            c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);*/
             
             //lucky Card object (queen of hearts)
             Card luckyCard = new Card();
             luckyCard.setValue(12);
             luckyCard.setSuit(Card.SUITS[0]);
+            
+            System.out.println("Value: " + luckyCard.getValue() + "\nSuit: " + luckyCard.getSuit());
            
-           if (i>0) {
+           /*if (i>0) {
                //loop from current card to first card
                for (int n=i; n>0; n--) {
                    //compare current card to all previous cards
@@ -43,7 +46,7 @@ public class CardTrick {
                             n=i;
                     } 
                }
-           }
+           }*/
         }
     
     }
