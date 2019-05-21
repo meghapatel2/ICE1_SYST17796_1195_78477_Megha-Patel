@@ -36,6 +36,7 @@ public class CardTrick {
 
             //Then report the result here
             System.out.println("your card is: " + c.getValue()  + " of " + c.getSuit());
+            System.out.println(c.getLuckyCard());
         }
         //c.setValue(insert call to random number generator here)
         //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
