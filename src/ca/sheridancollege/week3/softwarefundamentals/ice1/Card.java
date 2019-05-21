@@ -42,7 +42,7 @@ public class Card
    /**
     * @return the value
     */
-   // this  will get the value
+   // this  will get the value()
    public int getValue ()
    {
       return value;
