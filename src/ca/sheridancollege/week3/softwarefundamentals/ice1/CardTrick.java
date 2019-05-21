@@ -38,7 +38,6 @@ public class CardTrick {
         Card userCard= new Card();
         userCard.setSuit("clubs");
         userCard.setValue(4);
-        System.out.println("value of card is"+(i+1)+"is: "+c.
-                           getValue()+" " +c.getSuit());
+     
 }
 }
