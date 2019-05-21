@@ -21,6 +21,7 @@ public class CardTrick
    {
       Card[] magicHand = new Card[7];
       Random rnd = new Random();
+      Card c2 = new Card();
 
       for (int i = 0; i < magicHand.length; i++) {
          Card c = new Card();
@@ -36,6 +37,6 @@ public class CardTrick
          //Then report the result here
          System.out.println("your card is: " + c.getValue() + " of " + c.getSuit());
       }
-
+         System.out.println(c2.getLuckyCard());
    }
 }
