@@ -43,7 +43,8 @@ public class CardTrick
          c.setSuit(Card.SUITS[b]);
          //Then report the result here
          System.out.println("The Random Value is " + c.getValue() + " suite is " + c.getSuit());
-
+c.setValue(5);
+c.setSuit(Card.SUITS[2]);         
       }
 
    }
