@@ -28,7 +28,7 @@ public class CardTrick {
             
             Random rand = new Random();
             int cardV = rand.nextInt((13-1)+1)+1;
-           //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            int suitV = rand.nextInt(3);
            //Then report the result here
            
     
