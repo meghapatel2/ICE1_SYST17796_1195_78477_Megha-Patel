@@ -12,7 +12,6 @@ import java.util.Random;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Megha
- * connor rules
  */
 public class CardTrick {
     
@@ -34,6 +33,7 @@ public class CardTrick {
             magicHand[i] = c;
     }
 System.out.println("The lucky card no. is 8 of diamonds");
-        System.out.println("Thank you")
+        System.out.println("Thank you");
+        System.out.println("Assignment 1 completed");
 }
 }
