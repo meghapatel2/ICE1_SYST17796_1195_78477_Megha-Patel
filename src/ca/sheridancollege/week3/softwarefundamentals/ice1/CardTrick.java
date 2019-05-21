@@ -30,10 +30,12 @@ public class CardTrick {
            System.out.print("suit: "+c.getSuit()+" ");
            System.out.println("value: "+c.getValue());
            magicHand[i] = c;
+        
           */
         Card luckyCard = new Card();
         luckyCard.setValue(4);
         luckyCard.setSuit(Card.SUITS[2]);
+        
             
     }
        
