@@ -12,7 +12,7 @@ import java.util.Random;
  * the user's card. To be used as starting code in ICE 1
  *
  * @author Megha
- * @Author COnnor Murray, 1195577
+ * @Author COnnor Murray
  */
 public class CardTrick {
 
@@ -38,9 +38,6 @@ public class CardTrick {
             System.out.println("your card is: " + c.getValue()  + " of " + c.getSuit());
             System.out.println(c.getLuckyCard());
         }
-        //c.setValue(insert call to random number generator here)
-        //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-        //Then report the result here
     }
 
 }
