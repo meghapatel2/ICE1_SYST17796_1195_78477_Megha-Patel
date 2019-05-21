@@ -32,10 +32,15 @@ public class CardTrick {
            magicHand[i] = c;
         
           */
+        Card[] magicHand = new Card[7];
         Card luckyCard = new Card();
         luckyCard.setValue(4);
         luckyCard.setSuit(Card.SUITS[2]);
-        
+        for (int i=0; i<magicHand.length; i++)
+        {
+            System.out.print("Value: " + luckyCard.getValue());
+            System.out.println(" Suit: " + luckyCard.getSuit());
+            
             
     }
        
