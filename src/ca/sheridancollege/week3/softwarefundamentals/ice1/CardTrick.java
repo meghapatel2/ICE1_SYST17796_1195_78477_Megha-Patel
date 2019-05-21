@@ -25,6 +25,11 @@ public class CardTrick {
             c.setValue((int)(1 + Math.random() * 13));
             c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
             
+            //lucky Card object (queen of hearts)
+            Card luckyCard = new Card();
+            luckyCard.setValue(12);
+            luckyCard.setSuit(Card.SUITS[0]);
+            
             //check that the card has not been chosen before if not first card; if it has, redo it until its original
            /* if (i > 0) {
                 do {
