@@ -38,6 +38,8 @@ public class CardTrick {
     
     userCard.setSuit("Hearts");
     userCard.setValue(2);
+    
+    System.out.println("The lucky Card number is 2 of Hearts")
 
         
 
