@@ -36,8 +36,9 @@ public class CardTrick {
             System.out.println(c.getValue()+" "+c.getSuit());
         }
         Card userCard= new Card();
-        userCard.setSuit("Hearts");
-        userCard.setValue(2);
-        
+        userCard.setSuit("clubs");
+        userCard.setValue(4);
+        System.out.println("value of card is"+(i+1)+"is: "+c.
+                           getValue()+" " +c.getSuit());
 }
 }
