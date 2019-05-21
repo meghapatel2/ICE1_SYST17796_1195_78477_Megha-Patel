@@ -33,6 +33,8 @@ public class CardTrick
 
          String rString = Card.SUITS[rnd.nextInt(Card.SUITS.length)];
          c.setSuit(rString);
+         
+          System.out.println("Value of card " + (i + 1) + " is: " + c.getValue() + " " + c.getSuit());
          //Then report the result here
       }
 
@@ -42,4 +44,5 @@ public class CardTrick
       userCard.setValue(3);
 
    }
+   
 }
