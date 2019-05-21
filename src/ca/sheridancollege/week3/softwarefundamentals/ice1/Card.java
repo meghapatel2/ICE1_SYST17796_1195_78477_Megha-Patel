@@ -47,7 +47,7 @@ public class Card
    {
       return value;
    }
-//comment added
+   //
    /**
     * @param value the value to set
     */
