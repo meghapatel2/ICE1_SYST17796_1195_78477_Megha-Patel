@@ -10,9 +10,11 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * 1, Jack -11, Queen =12, King = 13) A suit (clubs, hearts, spades, diamonds).
  * There are 52 cards in a deck, no jokers. This code is to be used in ICE1.
  * When you create your own branch, add your name as a modifier.
- *
+ * Student Name: Amanpreet Singh
+ * Student ID: 991 325 163
  * @author Megha
  */
+
 public class Card {
 
     private String suit; //clubs, spades, diamonds, hearts
