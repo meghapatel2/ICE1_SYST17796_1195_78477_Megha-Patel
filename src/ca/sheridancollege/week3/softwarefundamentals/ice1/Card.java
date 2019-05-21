@@ -14,6 +14,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * add your name as a modifier.
  *
  * @author Megha
+ * @modifier Angela Villadiego
  */
 public class Card
 {
