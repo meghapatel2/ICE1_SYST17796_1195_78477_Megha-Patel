@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Student Name:Ahmad Bustani
+ * Student Number: 991533974
  */
 package ca.sheridancollege.week3.softwarefundamentals.ice1;
 
@@ -18,17 +17,23 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
-        Card[] magicHand = new Card[7];
         
+        //
+        Card[] magicHand = new Card[7];
+        Card c = new Card();
         for (int i=0; i<magicHand.length; i++)
         {
-            Card c = new Card();
+            
             c.setValue((int)(Math.random() * 13));
-           c.setSuit(Card.SUITS((int)(Math.random() * 3)));
+           c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
            
+           System.out.print("suit: "+c.getSuit()+" ");
+           System.out.println("value: "+c.getValue());
+           magicHand[i] = c;
            //Then report the result here
     }
-        System.out.println();
+       
+        
     
 }
 }
