@@ -19,19 +19,19 @@ public class CardTrick {
     {
         Card[] magicHand = new Card[7];
         
+        //luckyCard object
+        Card luckyCard = new Card();
+        luckyCard.setValue(12);
+        luckyCard.setSuit(Card.SUITS[0]);
+            
+        System.out.println("Value: " + luckyCard.getValue() + "\nSuit: " + luckyCard.getSuit());
+        
         for (int i=0; i<magicHand.length; i++)
         {
             /*
             Card c = new Card();
             c.setValue((int)(1 + Math.random() * 13));
             c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);*/
-            
-            //lucky Card object (queen of hearts)
-            Card luckyCard = new Card();
-            luckyCard.setValue(12);
-            luckyCard.setSuit(Card.SUITS[0]);
-            
-            System.out.println("Value: " + luckyCard.getValue() + "\nSuit: " + luckyCard.getSuit());
            
            /*if (i>0) {
                //loop from current card to first card
