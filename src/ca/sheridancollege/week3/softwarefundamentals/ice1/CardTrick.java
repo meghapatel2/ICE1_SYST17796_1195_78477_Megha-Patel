@@ -32,7 +32,7 @@ public class CardTrick {
             c.setValue(cardV);
             c.setSuit(Card.SUITS[suitV]);
            
-    
+            System.out.print("Suit: " + c.getSuit()+" Card Number: "+ c.getValue()+ "\n");
         }
 
     }
