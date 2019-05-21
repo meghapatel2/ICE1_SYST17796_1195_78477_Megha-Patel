@@ -18,7 +18,7 @@ public class CardTrick {
     public static void main(String[] args)
     {
         
-        //
+        /*
         Card[] magicHand = new Card[7];
         Card c = new Card();
         for (int i=0; i<magicHand.length; i++)
@@ -30,7 +30,11 @@ public class CardTrick {
            System.out.print("suit: "+c.getSuit()+" ");
            System.out.println("value: "+c.getValue());
            magicHand[i] = c;
-           //Then report the result here
+          */
+        Card luckyCard = new Card();
+        luckyCard.setValue(4);
+        luckyCard.setSuit(Card.SUITS[2]);
+            
     }
        
         
