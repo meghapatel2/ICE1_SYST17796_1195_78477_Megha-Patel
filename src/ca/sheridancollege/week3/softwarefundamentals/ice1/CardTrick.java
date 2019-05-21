@@ -13,19 +13,29 @@ import java.util.Random;
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author Megha
  */
+
+//Modified By Asha Sheikh
 public class CardTrick {
     
     public static void main(String[] args)
     {
         Card[] magicHand = new Card[7];
         
+        
         for (int i=0; i<magicHand.length; i++)
         {
             Card c = new Card();
-            //c.setValue(insert call to random number generator here)
-           //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-           //Then report the result here
-    }
+            Random rand = new Random();
+            int cardV = rand.nextInt((13-1)+1)+1;
+            int suitV = rand.nextInt(3);
+            c.setValue(cardV);
+            c.setSuit(Card.SUITS[suitV]);
+            
+            System.out.print("Suit: " + c.getSuit()+" Card Number: "+ c.getValue()+ "\n");
+            
+           
     
 }
+
+    }
 }
