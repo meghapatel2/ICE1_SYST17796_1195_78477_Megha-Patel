@@ -17,22 +17,21 @@ import java.util.Random;
 public class CardTrick {
 
     public static void main(String[] args) {
-        
+
         Card[] magicHand = new Card[7];
         Random rnd = new Random();
-        
-        for (int i = 0; i < magicHand.length; i++) {
-          Card c = new Card();
-          
-          int val = rnd.nextInt(13 - 1) + 1 +1;
-          int ranSuit = rnd.nextInt(4);
-          
-          c.setValue(val);
-          c.setSuit(Card.SUITS[ranSuit]);
-          
-            System.out.println("Value of card " + (i+1) + " is: "+ c.getValue() + " " + c.getSuit());
 
-            
+        for (int i = 0; i < magicHand.length; i++) {
+            Card c = new Card();
+
+            int val = rnd.nextInt(13 - 1) + 1 + 1;
+            int ranSuit = rnd.nextInt(4);
+
+            c.setValue(val);
+            c.setSuit(Card.SUITS[ranSuit]);
+
+            System.out.println("Value of card " + (i + 1) + " is: " + c.getValue() + " " + c.getSuit());
+
             //c.setValue(insert call to random number generator here)
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             //Then report the result here
