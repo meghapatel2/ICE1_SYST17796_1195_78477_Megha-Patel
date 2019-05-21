@@ -31,7 +31,9 @@ public class CardTrick {
             /*
             Card c = new Card();
             c.setValue((int)(1 + Math.random() * 13));
-            c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);*/
+            c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
+            System.out.println("Suit: " + c.getSuit()+ "\nValue: " + c.getValue());
+            magicHand[i] = c; */
            
            /*if (i>0) {
                //loop from current card to first card
