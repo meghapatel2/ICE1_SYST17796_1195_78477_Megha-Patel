@@ -33,6 +33,6 @@ public class CardTrick {
             System.out.println(c.getValue() + " of " + c.getSuit());
             magicHand[i] = c;
     }
-    
+System.out.println("The lucky card no. is 8 of diamonds");
 }
 }
