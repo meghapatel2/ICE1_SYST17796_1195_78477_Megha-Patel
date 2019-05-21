@@ -20,14 +20,27 @@ public class CardTrick
    public static void main (String[] args)
    {
       Card[] magicHand = new Card[7];
+      
+       Card luckyCard = new Card();
+         luckyCard.setValue(1);
+         luckyCard.setSuit(3);
+         System.out.print(luckyCard.getValueAsString() + " ");
+         System.out.println(luckyCard.getSuit());
 
       for (int i = 0; i < magicHand.length; i++) {
          Card c = new Card();
          Random rand = new Random();
          c.setValue(rand.nextInt(13 - 1 + 1) + 1);
          c.setSuit(Card.SUITS[rand.nextInt(3 + 1)]);
-         System.out.print(c.getSuit() + " ");
-         System.out.print(c.getValueAsString() + "\n");
+         if(c.value == luckyCard.value && c.suit == luckyCard.suit)
+         {
+            System.out.println("You guessed!");
+         }
+         else
+         {
+            System.out.print(c.getSuit() + " ");
+            System.out.print(c.getValueAsString() + "\n");
+         }
       }
 
    }
