@@ -34,7 +34,7 @@ public class CardTrick
          c.setSuit(Card.SUITS[rndSuit]);
 
          //Then report the result here
-         System.out.println("your card is: " + c.getValue() + c.getSuit());
+         System.out.println("your card is: " + c.getValue() + " of " + c.getSuit());
       }
 
    }
