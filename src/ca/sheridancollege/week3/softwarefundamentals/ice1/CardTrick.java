@@ -25,10 +25,35 @@ public class CardTrick {
             Card c = new Card();
             c.setValue((int)(1 + Math.random() * 13));
             c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
-            System.out.println("Suit " + (i+1) + ": " + c.getSuit());
-            System.out.println("Value " + (i+1) + ": " + c.getValue());
             
-    }
+            //check that the card has not been chosen before if not first card; if it has, redo it until its original
+           /* if (i > 0) {
+                do {
+                    for (int n=i; n > 0; n--) {
+                        if (c.getValue() == magicHand[n-1].getValue() && c.getSuit().equals(magicHand[n-1].getSuit())){
+                            //create new card
+                            c.setValue((int)(1 + Math.random() * 13));
+                            c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
+                        }
+                    }
+                } while (same);
+            }*/
+           
+           if (i>0) {
+               //loop from current card to first card
+               for (int n=i; n>0; n--) {
+                   //compare current card to all previous cards
+                    if (c.getValue() == magicHand[n-1].getValue() && c.getSuit().equals(magicHand[n-1].getSuit())){
+                            //if card is the same as any of previous cards, change card
+                            c.setValue((int)(1 + Math.random() * 13));
+                            c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
+                            
+                            //reset counter to beginning to compare all cards again
+                            n=i;
+                    } 
+               }
+           }
+        }
     
-}
+    }
 }
