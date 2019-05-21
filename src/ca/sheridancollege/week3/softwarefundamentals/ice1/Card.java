@@ -56,7 +56,13 @@ public class Card
       this.value = value;
       //setting the value
    }
-
+   
+   public String getLuckyCard(){
+      this.value=7;
+      String output= "The Lucky Card is"+ this.value+ " of "+ Card.SUITS[3];
+      
+      return output;
+   }
 
 
 }
