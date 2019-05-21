@@ -25,11 +25,14 @@ public class CardTrick
       for (int i = 0; i < magicHand.length; i++) {
          Card c = new Card();
          //c.setValue(insert call to random number generator here)
+
          int value = rnd.nextInt(13) + 1;
          int rndSuit = rnd.nextInt(4);
          c.setValue(value);
+
          //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
          c.setSuit(Card.SUITS[rndSuit]);
+
          //Then report the result here
          System.out.println("your card is: " + c.getValue() + c.getSuit());
       }
