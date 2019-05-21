@@ -34,5 +34,6 @@ public class CardTrick {
             magicHand[i] = c;
     }
 System.out.println("The lucky card no. is 8 of diamonds");
+        System.out.println("Thank you")
 }
 }
