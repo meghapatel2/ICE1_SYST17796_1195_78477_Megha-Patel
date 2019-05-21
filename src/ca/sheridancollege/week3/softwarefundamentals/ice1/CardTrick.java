@@ -44,6 +44,6 @@ public class CardTrick {
         
         userCard.setSuit("Hearts");
         userCard.setValue(2);
-       
+        System.out.println("This works");
 }
 }
