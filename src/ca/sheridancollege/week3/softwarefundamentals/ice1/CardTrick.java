@@ -42,8 +42,8 @@ public class CardTrick {
         
         Card userCard = new Card();
         
-     
+        userCard.setSuit("Hearts");
+        userCard.setValue(2);
        
 }
 }
-s
