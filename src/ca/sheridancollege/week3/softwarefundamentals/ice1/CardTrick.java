@@ -31,4 +31,5 @@ public class CardTrick {
             userCard.setSuit("Hearts");
             userCard.setValue(2);
     }
+            System.out.println ("The lucky card is 7 of Spades");
 }
