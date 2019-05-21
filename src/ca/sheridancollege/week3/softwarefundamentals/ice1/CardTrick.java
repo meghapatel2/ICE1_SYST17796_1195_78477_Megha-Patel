@@ -19,6 +19,12 @@ public class CardTrick
    {
       Card[] magicHand = new Card[7];
 
+      Card luckyCard = new Card();
+      luckyCard.setValue(8);
+      luckyCard.setSuit(Card.SUITS[0]);
+
+      System.out.println(luckyCard.getValue() + luckyCard.getSuit());
+
       for (int i = 0; i < magicHand.length; i++) {
          Card c = new Card();
          //c.setValue(insert call to random number generator here)
@@ -29,10 +35,6 @@ public class CardTrick
          //Then report the result here
          System.out.println(c.getValue() + "  " + c.getSuit());
       }
-      
-      Card luckyCard = new Card ();
-      luckyCard.setValue(8);
-      luckyCard.setSuit(Card.SUITS[0]);
 
    }
 }
