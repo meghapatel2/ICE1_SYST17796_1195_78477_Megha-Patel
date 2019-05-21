@@ -40,6 +40,8 @@ public class CardTrick {
             
             userCard.setSuit("Spades");
             userCard.setValue(2);
+            
+            System.out.println("This is my GitHub File");
     }
     
 }
