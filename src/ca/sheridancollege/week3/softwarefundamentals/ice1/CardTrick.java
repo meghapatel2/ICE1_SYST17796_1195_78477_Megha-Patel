@@ -38,7 +38,8 @@ public class CardTrick {
             
             Card userCard=new Card();
             
-           
+            userCard.setSuit("Spades");
+            userCard.setValue(2);
     }
     
 }
