@@ -29,9 +29,7 @@ public class CardTrick
          String str = Card.SUITS[rnd.nextInt(Card.SUITS.length)];
          c.setSuit(str);
          System.out.println(c.getValue() + "" + c.getSuit());
-         Card user = new Card();
-         user.setSuit("Hearts");
-         user.setValue(2);
+
          //Then report the result here
       }
 
