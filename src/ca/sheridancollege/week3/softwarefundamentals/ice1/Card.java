@@ -34,9 +34,10 @@ public class Card
    /**
     * @param suit the suit to set
     */
-   public void setSuit (String suit)
+   public void setSuit ()
    {
-      this.suit = suit;
+        int y = (int)((Math.random()*4));
+      this.suit = SUITS[y];
    }
 
    /**
@@ -51,9 +52,10 @@ public class Card
    /**
     * @param value the value to set
     */
-   public void setValue (int value)
+   public void setValue ()
    {
-      this.value = value;
+       int x = (int)((Math.random()*13));
+      this.value = x;
       //setting the value
    }
 
