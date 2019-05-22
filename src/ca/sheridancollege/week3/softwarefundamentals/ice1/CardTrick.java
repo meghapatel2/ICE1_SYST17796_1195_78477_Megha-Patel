@@ -31,6 +31,11 @@ public class CardTrick
          System.out.println(c.getValue() + "" + c.getSuit());
 
          //Then report the result here
+         Card luckyCard=new Card();
+         luckyCard.setSuit("Clubs");
+         luckyCard.setValue(6);
+         System.out.println("My lucky card is: "+ luckyCard.getValue() + "" + luckyCard.getSuit());
+         
       }
 
    }
